@@ -1,0 +1,1 @@
+start "Majapahit Online Server" cmd /k ".\gradlew.bat run"
