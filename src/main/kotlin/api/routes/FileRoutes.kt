@@ -7,7 +7,11 @@ import io.ktor.server.routing.*
 import java.io.File
 
 fun Route.fileRoutes() {
-    staticFiles("", File("static/site"))
+    get("/") {
+        call.respondFile(File("static/index.html"))
+    }
+    staticFiles("site", File("static/site"))
+    staticFiles("game", File("static/game"))
 
     get("/docs") {
         val docsIndex = File("docs/index.html")
