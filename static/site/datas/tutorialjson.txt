@@ -1,0 +1,825 @@
+{
+	"battle":
+	{
+		"images" :
+		[
+			{
+				"name" : "maskIcon",
+				"src" : "http://r.playerio.com/r/mo-kshatriya-varna-gk7jceiwuk5cgydq4frqw/resource/tutorial/maskIcon.png"
+				
+			}, {
+				"name" : "maskPhase",
+				"src" : "http://r.playerio.com/r/mo-kshatriya-varna-gk7jceiwuk5cgydq4frqw/resource/tutorial/maskPhase.png"
+			}
+		],
+		"acts" :
+		[
+			{
+				"action" : "showMascot",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["upper","right"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Hihihi! My name's Mongkee, welcome to Majapahit Online!"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Before I begin, I will tell you first how to communicate with players."]
+			}, {	
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Press \"Enter\" in your keyboard."]
+			}, {
+				"action" : "waitForPress",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["pressKeyboard", 13]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["This is the chat box, you can type whatever you want to chat, and then press \"Enter\" to send the message."]
+			}, {	
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [100, 500, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [100, 585]
+			}, {
+				"action" : "waitForPress",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["pressKeyboard", 13]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {		
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Your chat will appear in the form of bubble chat."]
+			}, {	
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Now I will teach you the basic the technique of battle."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [200, 175, -135]
+			}, {
+				"action" : "setImage",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["maskIcon", 0, 33]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["We have 5 Kshatriyas & 1 Deity's Blessing."]
+			}, {			
+				"action" : "removeImage",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["maskIcon"]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [70, 390, 90]
+			}, {
+				"action" : "setImage",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["maskPhase", 0, 414]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["The first phase of battle is Action Phase. In this phase, we can prepare our move before enemy's turn."]
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {		
+				"action" : "removeImage",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["maskPhase"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Now we will try to attack the enemy!"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Hover your Kshatriya to see his stats."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [298, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [298, 296]
+			}, {
+				"action" : "waitForHover",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["hoverArena", 2, 1]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [256, 485, 90]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Look at his attack pattern, he can only attack 1 enemy in front of him."]
+			}, {
+				"action" : "functionRun",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["unhoverArena", 2, 1]
+			}, {			
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Ok, in order to attack, we must move our Kshatriya to approach enemy."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Use move action, click here."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [585, 480, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [585, 557]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickAction", 4, "-"]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click our Kshatriya."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [298, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [298, 296]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 2, 1]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {	
+				"action" : "functionRun",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["changeCursor", "default"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["After that, we can see available position for our Kshatriya to move."]
+			}, {	
+				"action" : "functionRun",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["changeCursor", "move"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click this tile."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [369, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [369, 296]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 3, 1]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "functionRun",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["unhoverArena", 3, 1]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [120, 320, 135]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Note that move action cost us 1 crystal, so calculate it wisely."]
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Alright, 1 step more to approach our enemy! Use move action again."]
+			}, {	
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Now we will try the keyboard shortcut, press \"5\" in your keyboard."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [607, 445, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [607, 523]
+			}, {
+				"action" : "waitForPress",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["pressKeyboard", 53]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click our Kshatriya again."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [369, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [369, 296]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 3, 1]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click this position."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 296]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 4, 1]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "functionRun",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["unhoverArena", 4, 1]
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Yeah! Our Kshatriya is ready for attack the enemy now."]
+			}, {	
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Also, we can change the orientation of our Kshatriya"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Let's try, simply just click our Kshatriya."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 296]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 4, 1]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {	
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["That's it, you can adjust your attack pattern according to your orientation!"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click it again until facing to the right"]
+			}, {			
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 296]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 4, 1]
+			}, {			
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 296]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 4, 1]
+			}, {			
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 206, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [440, 296]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 4, 1]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {	
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Just be careful before attack, make sure every Kshatriya's orientation is right."]
+			}, {		
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["By the way, we can use other action too! Try to use Damage All Action."]
+			}, {	
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [506, 480, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [506, 557]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickAction", 3, "-"]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["That's the Damage All! Now prepare to attack the enemy!"]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click here to end your action phase."]
+			}, {	
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [201, 470, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [201, 551]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickEnd", "-"]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Next phase is Crystalization Phase. In this phase, we can crystalize our unused action for 1 crystal each."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Now, we will try to crystalize 2 actions."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click this action."]
+			}, {	
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [443, 480, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [443, 557]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickAction", 2, "-"]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click this action too."]
+			}, {	
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [379, 480, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [379, 557]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickAction", 1, "-"]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [315, 480, 90]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["In the next turn we will get this action back, because we didn't crystalize it."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["We can use this method to save actions."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Now end crystalization phase."]
+			}, {	
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [201, 445, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [201, 526]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickEnd", "-"]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["After crystalization phase, every Kshatriya will attack all enemy within his attack pattern."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 6,
+				"blocking" : false,
+				"param" : ["Now, let's wait for enemy's turn."]
+			}, {
+				"action" : "setSign",
+				"delay" : 15,
+				"blocking" : false,
+				"param" : [120, 352, 135]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["1 of our Kshatriya has died, and he leave his soul to us."]
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["Now we will learn to use soul to evolve our Kshatriya."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click this vase to use a soul."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [110, 463, 135]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [50, 523]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickSoul", "-"]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Click to 1 of our Kshatriya."]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [298, 277, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [298, 367]
+			}, {
+				"action" : "waitForClick",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["clickArena", 2, 2]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [] 
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : false,
+				"param" : ["Yeah, our Kshatriya has evolved! Hover our Kshatriya to see his new stats!"]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [298, 277, 90]
+			}, {
+				"action" : "setMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [298, 367]
+			}, {
+				"action" : "waitForHover",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["hoverArena", 2, 2]
+			}, {
+				"action" : "defaultMask",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [296, 468, 90]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["See that his HP is fully recovered & his Maximum HP, Attack and Attack Pattern is modifed too!"]
+			}, {
+				"action" : "setSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : [503, 468, 90]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["You can see what happen to your Kshatriya when he evolve again."]
+			}, {
+				"action" : "hideSign",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : []
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["After your Kshatriya evolve to Elite, you cannot evolve it further. So use your soul wisely."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["That's all for the basic, you win if you defeat all of your enemy Kshatriyas."]
+			}, {
+				"action" : "mascotTalk",
+				"delay" : 0,
+				"blocking" : true,
+				"param" : ["See you again at the battlefield!"]
+			}
+		]
+	}
+}
