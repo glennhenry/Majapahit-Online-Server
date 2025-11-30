@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "Starting majapahit-online..."
+echo "Starting changeme..."
 
 # Try JAVA_HOME first
 if [[ -x "$JAVA_HOME/bin/java" ]]; then
@@ -11,4 +11,4 @@ else
     exit 1
 fi
 
-"$JAVA" -jar majapahit-online.jar
+"$JAVA" --enable-native-access=ALL-UNNAMED -jar changeme.jar

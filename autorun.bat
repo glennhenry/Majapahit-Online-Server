@@ -1,5 +1,5 @@
 @echo off
-echo Starting majapahit-online...
+echo Starting changeme...
 
 :: Try JAVA_HOME first
 set "JAVA_PATH=%JAVA_HOME%\bin\java.exe"
@@ -17,5 +17,5 @@ if not exist "%JAVA_PATH%" (
 )
 
 :: Launch the server with the proper path
-"%JAVA_PATH%" -jar majapahit-online.jar
+"%JAVA_PATH%" --enable-native-access=ALL-UNNAMED -jar changeme.jar
 pause
