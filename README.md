@@ -16,7 +16,7 @@ The game's wiki is not archived here, but it can be accessed with the [Wayback M
 
 Repository ini menyimpan arsip dari game browser buatan Anantarupa bernama **Majapahit Online Kshatriya Varna (MOKV)**. Di dalamnya juga terdapat server emulator MOKV yang belum berfungsi secara lengkap. Kami hanya bertujuan untuk mengarsipkan assets-assets game MOKV selagi assets tersebut masih tersedia di CDN milik PlayerIO.
 
-# Server Instruction
+# Server Manual
 
 ## Requirements
 
