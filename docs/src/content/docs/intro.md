@@ -10,6 +10,8 @@ MOKV is made with [PlayerIO](https://playerio.com) backend service.
 
 ## Summary
 
+See [flow](flow) for the game sequential process.
+
 ### GameFS
 
 PlayerIO has virtual file system called [GameFS](https://playerio.com/features/gamefs/) that games can access to from network. Every game-related files and assets lives here.

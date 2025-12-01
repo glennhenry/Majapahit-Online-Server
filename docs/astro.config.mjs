@@ -39,6 +39,7 @@ export default defineConfig({
       ],
       sidebar: [
         { label: "Intro", slug: "index" },
+        { label: "Flow", slug: "flow" },
       ],
     }),
   ],
