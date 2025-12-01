@@ -66,7 +66,7 @@ The redirections for `MOKV.swf` follow the same pattern: any route to PlayerIO C
 10. `http://api.playerio.com/api` -> `http://127.0.0.1:8080/api`.
 
 :::note
-`MOKV-Kongregate.swf` and `API_AS3_Local.swf` aren't edited yet, this is because we don't use the Kong version. I don't know what makes it differ with the `MOKV.swf`, but the Kong version is 10 KB smaller.
+`MOKV-Kongregate.swf` and `API_AS3_Local.swf` aren't edited yet, this is because we don't use the Kong version. There is presumably little difference with the original version as their size don't differ by much. The loading screen
 :::
 
 Additionally for PlayerIO bridge `flashbridge/1.swf`:

@@ -12,6 +12,7 @@ fun Route.fileRoutes() {
     }
     staticFiles("site", File("static/site"))
     staticFiles("game", File("static/game"))
+    staticFiles("flashbridge", File("static/flashbridge"))
 
     get("/docs") {
         val docsIndex = File("docs/index.html")
