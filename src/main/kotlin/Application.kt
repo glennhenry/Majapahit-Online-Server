@@ -22,6 +22,8 @@ import game.GameIdentity
 import game.Globals
 import game.routes.fileRoutes
 import game.routes.ApiRoutes
+import game.socket.handler.JoinHandler
+import game.socket.messaging.PioFanchantGuide
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
@@ -188,11 +190,11 @@ fun GameStageInitContext.lifecycleHooks() {
 fun GameStageInitContext.fanchantGuides() {
     // register fanchant guides...
 
-    // guide()
+    guide(PioFanchantGuide())
 }
 
 fun GameStageInitContext.handlers(serverContext: ServerContext) {
     // register handlers
 
-    // handler()
+    handler(JoinHandler(serverContext))
 }
