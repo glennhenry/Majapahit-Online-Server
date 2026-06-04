@@ -1,10 +1,19 @@
 # Encore
 
-<img src="progress.png" alt="gameplay image" width=500/>
+<img src="progress1.png" alt="gameplay image" width=500/>
+<img src="progress2.png" alt="gameplay image" width=500/>
 
 Server emulator for **Majapahit Online Kshatriya Varna (MOKV)** (2013-2019), developed by [Anantarupa](https://anantarupa.com/).
 
 This server emulator is experimental and only partially functional.
+
+Currently, we are still stuck on the loading screen after register/login. What is next?
+```
+- implement API 85, API 27
+- find a way to response API 30 correctly so the game stop retrying
+- find out more about socket handlers "finishLoad", "getAnnouncement", "buddyInvite", "getWhisper", "dailyReward", "loadData". and other loading parts: "payVault.refresh", "initMergeData", "revertConnectionEvent", "checkCharacterData", "advanceToMainMenu", "mainGame.initScreen", "loadAvatar", "loadAction".
+- download the remaining game assets from pio cdn
+```
 
 *This project tries to reconstruct the game server-side behavior. Client files and assets are not included. This project is not official and is not associated with the original creators.*
 
