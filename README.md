@@ -1,4 +1,4 @@
-# Encore
+# Majapahit Online
 
 <img src="progress1.png" alt="gameplay image" width=500/>
 <img src="progress2.png" alt="gameplay image" width=500/>
