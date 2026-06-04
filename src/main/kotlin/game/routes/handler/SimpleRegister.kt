@@ -1,4 +1,4 @@
-package game.routes.hanadler
+package game.routes.handler
 
 import game.routes.models.pio.auth.PlayerIORegistrationError
 import game.routes.models.pio.auth.PlayerInsightState
@@ -12,7 +12,6 @@ import encore.utils.types.isFail
 import encore.utils.types.okOrThrow
 import game.routes.utils.withErrorHeader
 import game.routes.utils.withSuccessHeader
-import io.ktor.http.content.ByteArrayContent
 import io.ktor.server.request.receiveChannel
 import io.ktor.server.response.respondBytes
 import io.ktor.server.routing.*

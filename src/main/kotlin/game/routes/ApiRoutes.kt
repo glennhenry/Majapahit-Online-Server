@@ -5,7 +5,7 @@ import encore.fancam.Fancam
 import encore.route.RouteHandler
 import encore.route.guard.NoAuthGuard
 import encore.route.handle
-import game.routes.hanadler.simpleRegister
+import game.routes.handler.simpleRegister
 import game.routes.handler.*
 import io.ktor.http.*
 import io.ktor.server.response.*
