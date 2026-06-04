@@ -20,7 +20,8 @@ import encore.venue.Venue
 import encore.websocket.handler.WsCommandHandler
 import game.GameIdentity
 import game.Globals
-import game.fileRoutes
+import game.routes.fileRoutes
+import game.routes.ApiRoutes
 import io.ktor.server.application.*
 import io.ktor.server.engine.*
 import io.ktor.server.netty.*
@@ -108,6 +109,7 @@ suspend fun Application.configureApplication() {
     routing {
         fileRoutes()
         with(BackstageRoutes(serverContext, backstageToken)) { install() }
+        with(ApiRoutes(serverContext)) { install() }
     }
 
     // log startup

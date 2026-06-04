@@ -23,6 +23,7 @@ import encore.time.TimeCenter
 import encore.venue.Venue
 import encore.websocket.WebSocketManager
 import game.RealContextFactory
+import game.domain.room.RoomSubunit
 import kotlinx.coroutines.CoroutineScope
 
 /**
@@ -67,7 +68,9 @@ suspend fun createServerContext(
         presence = playerPresenceSubunit,
         auth = authSubunit,
         session = sessionSubunit,
-        creation = playerCreationSubunit
+        creation = playerCreationSubunit,
+
+        room = RoomSubunit()
     )
 
     // debut all subunits

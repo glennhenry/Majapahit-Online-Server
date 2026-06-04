@@ -1,4 +1,4 @@
-package game
+package game.routes
 
 import encore.route.RouteHandler
 import io.ktor.http.HttpStatusCode
@@ -19,10 +19,21 @@ import java.io.File
  * Since this is simple, it doesn't use the [RouteHandler]
  */
 fun Route.fileRoutes() {
+    // website routes
     get("/") {
-        call.respondFile(File("assets/site/index.html"))
+        call.respondFile(File("assets/index.html"))
     }
     staticFiles("site", File("assets/site"))
+    get("favicon.ico") {
+        val favicon = File("assets/site/favicon.ico")
+        call.respondFile(favicon)
+    }
+
+    // game routes
+    staticFiles("game", File("assets/game"))
+    staticFiles("flashbridge", File("assets/flashbridge"))
+    staticFiles("kong", File("assets/kong"))
+    staticFiles("crossdomain.xml", File("assets/crossdomain.xml"))
 
     val docsDir = File("docs_build")
     if (File(docsDir, "index.html").exists()) {

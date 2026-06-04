@@ -21,6 +21,7 @@ import encore.time.source.SystemTimeSource
 import encore.time.source.TimeSource
 import encore.utils.support.className
 import encore.websocket.WebSocketManager
+import game.domain.room.RoomSubunit
 import kotlinx.coroutines.CoroutineScope
 import kotlin.coroutines.EmptyCoroutineContext
 
@@ -82,7 +83,9 @@ data class ServerContext(
                     auth = AuthSubunit(account, creation, session),
                     creation = creation,
                     presence = PlayerPresenceSubunit(),
-                    session = session
+                    session = session,
+
+                    room = RoomSubunit()
                 )
             )
         }
@@ -127,6 +130,9 @@ data class ServerSubunits(
     val creation: PlayerCreationSubunit,
     val presence: PlayerPresenceSubunit,
     val session: SessionSubunit,
+
+    // game related subunits
+    val room: RoomSubunit
 ) {
     /**
      * Return all server subunit instances.
