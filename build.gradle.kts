@@ -7,7 +7,7 @@ plugins {
     alias(libs.plugins.kotlin.plugin.serialization)
 }
 
-group = "dev.encore"
+group = "dev.mokvserver"
 version = "1.0.1"
 
 application {
@@ -16,12 +16,12 @@ application {
 
 ktor {
     fatJar {
-        archiveFileName.set("encore.jar")
+        archiveFileName.set("mokvserver.jar")
     }
 }
 
 tasks.withType<ShadowJar> {
-    archiveFileName.set("encore.jar")
+    archiveFileName.set("mokvserver.jar")
     destinationDirectory.set(file("deploy"))
     manifest {
         attributes["Main-Class"] = "ApplicationKt"
