@@ -51,7 +51,6 @@ suspend fun RoutingContext.simpleRegister(serverContext: ServerContext) {
     call.respondBytes(Protobuf.encode<SimpleRegisterOutput>(output))
 }
 
-
 @OptIn(ExperimentalSerializationApi::class)
 private fun handleFailedRegistration(): ByteArray {
     fun errorFor(field: String): String {
