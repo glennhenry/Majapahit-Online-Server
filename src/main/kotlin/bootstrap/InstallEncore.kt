@@ -19,6 +19,7 @@ import io.ktor.serialization.kotlinx.protobuf.*
 import io.ktor.server.application.*
 import io.ktor.server.plugins.contentnegotiation.*
 import io.ktor.server.plugins.cors.routing.*
+import io.ktor.server.plugins.doublereceive.DoubleReceive
 import io.ktor.server.plugins.origin
 import io.ktor.server.plugins.statuspages.*
 import io.ktor.server.request.*
@@ -61,6 +62,7 @@ suspend fun Application.installEncore(
     configureFancam()
     configureCors()
     configureStatusPages()
+    configureDoubleReceive()
     configureWebSocket()
     configureSecurity(security)
     interceptResponse()
@@ -133,7 +135,8 @@ fun Application.configureStatusPages() {
         }
 
         unhandled { call ->
-            Fancam.warn(Tags.Api) { call.stringifyHttpRequest(unhandled = true) }
+            val req = call.stringifyHttpRequest(unhandled = true)
+            Fancam.warn(Tags.Api) { req }
 
             call.respondText(
                 text = errorHtml(404, "Not found in the system."),
@@ -142,6 +145,10 @@ fun Application.configureStatusPages() {
             )
         }
     }
+}
+
+fun Application.configureDoubleReceive() {
+    install(DoubleReceive)
 }
 
 /**
@@ -189,7 +196,8 @@ fun Application.configureSecurity(security: SecurityGuard) {
         when (val result = security.verify(call)) {
             is GuardResult.Welcome -> proceed()
             is GuardResult.GetOut -> {
-                Fancam.debug(Tags.Api) { call.stringifyHttpRequest(unhandled = false) }
+                val req = call.stringifyHttpRequest(unhandled = false)
+                Fancam.debug(Tags.Api) { req }
 
                 call.respondText(
                     text = errorHtml(403, result.why),

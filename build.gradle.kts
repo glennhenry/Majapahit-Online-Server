@@ -8,7 +8,7 @@ plugins {
 }
 
 group = "dev.mokvserver"
-version = "1.0.1"
+version = "1.0.3"
 
 application {
     mainClass = "ApplicationKt"
@@ -79,6 +79,7 @@ dependencies {
     implementation(libs.ktor.server.cors)
     implementation(libs.ktor.server.status.pages)
     implementation(libs.ktor.server.websockets)
+    implementation(libs.ktor.server.double.receive)
     implementation(libs.logger.noop)
 
     // Ktor serialization
