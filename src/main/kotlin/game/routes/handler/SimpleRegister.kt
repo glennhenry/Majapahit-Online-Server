@@ -9,6 +9,7 @@ import encore.fancam.Fancam
 import encore.serialization.Protobuf
 import encore.utils.types.isFail
 import encore.utils.types.okOrThrow
+import game.routes.utils.withSuccessHeader
 import io.ktor.server.request.receiveChannel
 import io.ktor.server.response.respondBytes
 import io.ktor.server.routing.*
@@ -48,7 +49,7 @@ suspend fun RoutingContext.simpleRegister(serverContext: ServerContext) {
 
     Fancam.info { "Successfully registered user: '${simpleRegisterArgs.username}'" }
 
-    call.respondBytes(Protobuf.encode<SimpleRegisterOutput>(output))
+    call.respondBytes(Protobuf.encode<SimpleRegisterOutput>(output).withSuccessHeader())
 }
 
 @OptIn(ExperimentalSerializationApi::class)

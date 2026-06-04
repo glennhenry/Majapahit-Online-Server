@@ -11,7 +11,7 @@ data class SimpleRegisterArgs(
     val email: String = "",
     val captchaKey: String = "",
     val captchaValue: String = "",
-    val extra: List<KeyValuePair> = emptyList(),
+    val extraData: List<KeyValuePair> = emptyList(),
     val partnerId: String = "",
     val playerInsightSegments: List<String> = emptyList(),
     val clientAPI: String = "",
