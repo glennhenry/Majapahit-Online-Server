@@ -5,11 +5,11 @@
 
 Server emulator for **Majapahit Online Kshatriya Varna (MOKV)** (2013-2019), developed by [Anantarupa](https://anantarupa.com/).
 
-This server emulator is experimental and only partially functional.
+This server emulator is not functioning yet, and is already abandoned.
 
-Currently, we are still stuck on the loading screen after register/login. What is next?
+Next things to do:
 ```
-- implement API 85, API 27
+- implement API 85, API 27 
 - find a way to response API 30 correctly so the game stop retrying
 - find out more about socket handlers "finishLoad", "getAnnouncement", "buddyInvite", "getWhisper", "dailyReward", "loadData". and other loading parts: "payVault.refresh", "initMergeData", "revertConnectionEvent", "checkCharacterData", "advanceToMainMenu", "mainGame.initScreen", "loadAvatar", "loadAction".
 - download the remaining game assets from pio cdn
